@@ -1,0 +1,3 @@
+{"id":"programming_003","domains":["programming"],"question":"Implement a Python context manager that measures elapsed time and include tests.","expected_points":["__enter__","__exit__","monotonic clock","tests"]}
+{"id":"programming_005","domains":["programming"],"question":"Write a secure FastAPI endpoint that accepts a filename but cannot read outside a configured directory.","expected_points":["path traversal","resolved path","validation","tests"]}
+{"id":"statistics_003","domains":["statistics","programming"],"question":"Write Python code to calculate an unbiased sample variance and test it on known data.","expected_points":["n-1","valid code","input validation","tests"]}

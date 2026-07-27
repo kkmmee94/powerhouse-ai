@@ -1,0 +1,37 @@
+{
+  "profile": "Q6_K",
+  "context_tokens": 8192,
+  "cold_warmup_seconds": 0.23,
+  "cases": [
+    {
+      "prompt": "Explain the practical difference between RAM and VRAM in exactly 150 words.",
+      "latency_seconds": 4.147,
+      "completion_tokens": 207,
+      "end_to_end_tokens_per_second": 49.915,
+      "generation_tokens_per_second": 51.20125059672955,
+      "prompt_eval_seconds": 0.071,
+      "peak_vram_mb": 9313,
+      "answer": "RAM, or Random Access Memory, serves as the system's primary short-term storage for the CPU. It holds operating systems, applications, and temporary data needed for general computing tasks. When you browse the web or edit documents, RAM ensures quick access to this information. Conversely, VRAM, or Video Random Access Memory, is dedicated exclusively to the graphics processing unit (GPU). It stores textures, frame buffers, and shader programs required for rendering images, videos, and 3D graphics. While RAM supports overall system performance, VRAM specifically dictates graphical fidelity and gaming smoothness. If VRAM fills up, games may stutter or crash, whereas insufficient RAM slows down the entire computer. Modern systems often include integrated graphics sharing system RAM, but dedicated VRAM offers superior speed and capacity for heavy visual workloads. Essentially, RAM fuels general processing, while VRAM powers visual output. Understanding this distinction helps users choose hardware suited for gaming versus office work, ensuring optimal performance without unnecessary cost or bottlenecks in their specific usage scenarios."
+    },
+    {
+      "prompt": "Solve x^2 - 11x + 24 = 0, verify both roots, and explain the method.",
+      "latency_seconds": 10.048,
+      "completion_tokens": 512,
+      "end_to_end_tokens_per_second": 50.955,
+      "generation_tokens_per_second": 51.444588149899886,
+      "prompt_eval_seconds": 0.065,
+      "peak_vram_mb": 9308,
+      "answer": "Here is the step-by-step solution to the quadratic equation $x^2 - 11x + 24 = 0$, including the verification of the roots and an explanation of the method used.\n\n### 1. Solving the Equation\n\nWe will solve the quadratic equation $x^2 - 11x + 24 = 0$ using the **Factorization Method** (also known as splitting the middle term).\n\n**Step 1: Identify coefficients**\nThe equation is in the form $ax^2 + bx + c = 0$, where:\n*   $a = 1$\n*   $b = -11$\n*   $c = 24$\n\n**Step 2: Find two numbers**\nWe need to find two numbers that satisfy two conditions:\n1.  Their **product** is equal to $a \\times c = 1 \\times 24 = 24$.\n2.  Their **sum** is equal to $b = -11$.\n\nLet's list the factor pairs of 24:\n*   $1 \\times 24$ (Sum: 25)\n*   $2 \\times 12$ (Sum: 14)\n*   $3 \\times 8$ (Sum: 11)\n*   $4 \\times 6$ (Sum: 10)\n\nSince the sum needs to be $-11$ (negative) and the product positive ($24$), both numbers must be negative.\n*   $(-3) + (-8) = -11$\n*   $(-3) \\times (-8) = 24$\n\nThe two numbers are **$-3$** and **$-8$**.\n\n**Step 3: Rewrite the equation**\nSplit the middle term ($-11x$) using these two numbers:\n$$x^2 - 8x - 3x + 24 = 0$$\n\n**Step 4: Factor by grouping**\nGroup the first two terms and the last two terms:\n$$(x^2 - 8x) - (3x - 24) = 0$$\n\nFactor out the greatest common divisor from each group:\n*   From $(x^2 - 8x)$, factor out $x$: $x(x - 8"
+    },
+    {
+      "prompt": "Write a correct Python implementation of binary search with type hints, input validation, and three assert-based tests.",
+      "latency_seconds": 9.054,
+      "completion_tokens": 462,
+      "end_to_end_tokens_per_second": 51.025,
+      "generation_tokens_per_second": 51.57824978698853,
+      "prompt_eval_seconds": 0.065,
+      "peak_vram_mb": 9306,
+      "answer": "```python\nfrom typing import List, Optional\n\ndef binary_search(arr: List[int], target: int) -> Optional[int]:\n    \"\"\"\n    Perform binary search on a sorted list of integers.\n    \n    Args:\n        arr: A sorted list of integers.\n        target: The integer value to search for.\n    \n    Returns:\n        The index of the target if found, otherwise None.\n    \n    Raises:\n        ValueError: If the input list is not sorted.\n        TypeError: If inputs are not of the expected types.\n    \"\"\"\n    # Input validation\n    if not isinstance(arr, list):\n        raise TypeError(\"Input array must be a list.\")\n    if not isinstance(target, int):\n        raise TypeError(\"Target must be an integer.\")\n    \n    # Check if list is sorted\n    for i in range(len(arr) - 1):\n        if arr[i] > arr[i + 1]:\n            raise ValueError(\"Input list must be sorted in ascending order.\")\n    \n    left, right = 0, len(arr) - 1\n    \n    while left <= right:\n        mid = (left + right) // 2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            left = mid + 1\n        else:\n            right = mid - 1\n    \n    return None\n\n# Assert-based tests\nif __name__ == \"__main__\":\n    # Test 1: Target exists in the list\n    sorted_list = [1, 3, 5, 7, 9, 11]\n    assert binary_search(sorted_list, 7) == 3, \"Test 1 Failed: Target not found at correct index\"\n    \n    # Test 2: Target does not exist in the list\n    assert binary_search(sorted_list, 4) is None, \"Test 2 Failed: Should return None for missing target\"\n    \n    # Test 3: Empty list\n    assert binary_search([], 5) is None, \"Test 3 Failed: Should return None for empty list\"\n    \n    print(\"All tests passed!\")\n```"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+* text=auto
+*.ps1 text eol=crlf
+*.py text eol=lf
+*.md text eol=lf
+*.jsonl text eol=lf
+*.json text eol=lf
+*.txt text eol=lf
+*.toml text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.cff text eol=lf
+uv.lock text eol=lf
+SHA256SUMS text eol=lf

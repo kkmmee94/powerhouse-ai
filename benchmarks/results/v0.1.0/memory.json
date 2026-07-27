@@ -1,0 +1,157 @@
+{
+  "cases": 20,
+  "top_8_hits": 20,
+  "top_8_accuracy": 1.0,
+  "project_isolation": true,
+  "details": [
+    {
+      "query": "simulation time step hours",
+      "found": true,
+      "retrieved": [
+        "The simulation time step is 0.25 hours."
+      ]
+    },
+    {
+      "query": "chosen growth model",
+      "found": true,
+      "retrieved": [
+        "The chosen growth model is logistic with carrying capacity."
+      ]
+    },
+    {
+      "query": "local API port",
+      "found": true,
+      "retrieved": [
+        "The local API port is 8123.",
+        "The repository branch is feature/local-runtime."
+      ]
+    },
+    {
+      "query": "database SQLite WAL",
+      "found": true,
+      "retrieved": [
+        "The database uses SQLite in WAL mode."
+      ]
+    },
+    {
+      "query": "experimental organism coli K-12",
+      "found": true,
+      "retrieved": [
+        "The experimental organism is E. coli K-12."
+      ]
+    },
+    {
+      "query": "primary output unit cells",
+      "found": true,
+      "retrieved": [
+        "The primary output unit is cells per millilitre."
+      ]
+    },
+    {
+      "query": "calibration filename v3",
+      "found": true,
+      "retrieved": [
+        "The calibration file is named calibration-v3.csv."
+      ]
+    },
+    {
+      "query": "project colour cobalt",
+      "found": true,
+      "retrieved": [
+        "The project colour is cobalt blue."
+      ]
+    },
+    {
+      "query": "retry limit attempts",
+      "found": true,
+      "retrieved": [
+        "The retry limit is five attempts."
+      ]
+    },
+    {
+      "query": "report audience biology students",
+      "found": true,
+      "retrieved": [
+        "The report audience is first-year biology students."
+      ]
+    },
+    {
+      "query": "selected optimizer AdamW",
+      "found": true,
+      "retrieved": [
+        "The selected optimizer is AdamW."
+      ]
+    },
+    {
+      "query": "validation split percent",
+      "found": true,
+      "retrieved": [
+        "The validation split is fifteen percent."
+      ]
+    },
+    {
+      "query": "deployment target Windows",
+      "found": true,
+      "retrieved": [
+        "The deployment target is a private Windows workstation.",
+        "Distractor note 0: routine status information with no target decision.",
+        "Distractor note 1: routine status information with no target decision.",
+        "Distractor note 2: routine status information with no target decision.",
+        "Distractor note 3: routine status information with no target decision.",
+        "Distractor note 4: routine status information with no target decision.",
+        "Distractor note 5: routine status information with no target decision.",
+        "Distractor note 6: routine status information with no target decision."
+      ]
+    },
+    {
+      "query": "sample label prefix",
+      "found": true,
+      "retrieved": [
+        "The sample label prefix is EXP-27."
+      ]
+    },
+    {
+      "query": "approved temperature Celsius",
+      "found": true,
+      "retrieved": [
+        "The approved temperature is 37 degrees Celsius."
+      ]
+    },
+    {
+      "query": "control group glucose",
+      "found": true,
+      "retrieved": [
+        "The control group receives no added glucose."
+      ]
+    },
+    {
+      "query": "chart logarithmic axis",
+      "found": true,
+      "retrieved": [
+        "The chart must use a logarithmic y-axis."
+      ]
+    },
+    {
+      "query": "repository branch local runtime",
+      "found": true,
+      "retrieved": [
+        "The repository branch is feature/local-runtime.",
+        "The local API port is 8123."
+      ]
+    },
+    {
+      "query": "minimum confidence threshold",
+      "found": true,
+      "retrieved": [
+        "The minimum confidence threshold is 0.82."
+      ]
+    },
+    {
+      "query": "final export format Parquet",
+      "found": true,
+      "retrieved": [
+        "The final export format is Parquet."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+{"id":"tool_units_001","domains":["mathematics"],"question":"Convert 2.5 kg to g using the unit conversion tool and state the exact result.","expected_points":["2500 g","unit conversion tool"]}
+{"id":"tool_calculator_001","domains":["mathematics"],"question":"Calculate sqrt(144) + 3^2 using the calculator tool and state the exact result.","expected_points":["21","calculator tool"]}
